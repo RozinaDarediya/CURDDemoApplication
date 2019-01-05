@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CURDDemoApplication</string>
+
+    <!--Login-->
+    <string name="strEmail">Email</string>
+    <string name="strPassword">Password</string>
+    <string name="strLogIn">Login</string>
+    <string name="strNotAnUser">Not an user? Sign up</string>
+
+    <!--Sign up-->
+    <string name="strUserName">Name</string>
+    <string name="strGender">Gender</string>
+    <string name="strMale">Male</string>
+    <string name="strFemale">Female</string>
+    <string name="strConfirmPassword">Confirm Password</string>
+    <string name="strSignUp">Sign up</string>
+
+    <!--enquiry-->
+    <string name="strSave">Save</string>
+    <string name="strUpdate">Update</string>
+    <string name="strDelete">Delete</string>
+    <string name="strContact">Contact</string>
+    <string name="strMsg">Enquiry message</string>
+
+    <!--message-->
+    <string name="no_data">No data</string>
+    <string name="required_field">This field is required</string>
+    <string name="required_num">Phone number should be of 10 digits</string>
+    <string name="email_field_required">Please provide valid email ID....</string>
+    <string name="strPasswordMismatch">Password and Confirm password doesn\'t match</string>
+    <string name="strPasswordLength">"Password length should be at least 8 "</string>
+
+    <string name="camera_permission_title"><b><u>Camera Permission</u></b></string>
+    <string name="camera_permission">Kindly allow <b>Camera Permission</b> from App Setting, \n without this permission \n you can not use Camera.</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+
+    <string name="txt_read_permission_title"><b><u>Storage Permission</u></b></string>
+    <string name="txt_read_permission">Kindly allow <b>Storage Permission</b> from App Setting, \n without this permission \n you can not use Gallery images.</string>
+
+
+    <array name="eduArray">
+        <item>BCA</item>
+        <item>MCA</item>
+    </array>
+
+    <string-array name="arr_photo">
+        <item>Take Photo</item>
+        <item>Choose from Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+    <string name="add_photo">Add Photo : </string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="txt_not_now">Not now</string>
+    <string name="txt_countinue">Countinue</string>
+
+</resources>

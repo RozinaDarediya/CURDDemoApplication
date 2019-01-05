@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EnquiryFormActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/etFormName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_user_name"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif"
+                android:hint="@string/strUserName"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_edu" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="DOB"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif"
+                android:hint="@string/strEmail"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@id/etContact"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="sans-serif"
+                android:hint="@string/strContact"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusDown="@id/etMsg"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_msg"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="top|left"
+                android:hint="@string/strMsg"
+                android:imeOptions="flagNoEnterAction"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:lines="10"
+                android:maxLines="15"
+                android:minLines="1"
+                android:padding="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/round_filled_rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:backgroundTintMode="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="@string/strSave"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/round_filled_rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:backgroundTintMode="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_9sdp"
+                    android:text="@string/strDelete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
